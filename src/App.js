@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 
 
 import './styles/App.css';
@@ -13,6 +12,12 @@ import DropdownItem from './components/DropdownItem';
 
 //import data
 import products from './data/data';
+
+//import pages
+import Contact from './views/Contact';
+import Products from './views/Products';
+import DetailProduct from './views/DetailProduct';
+
 
 class App extends Component {
   render() {
@@ -28,15 +33,14 @@ class App extends Component {
         </div>
         <main>
           <Switch>
-              <Route path="/"/>
               <Route path="/products/accessories"/>
+              <Route path="/products/All" component={Products}/>
               <Route path="/products/brass"/>
               <Route path="/products/furniture"/>
-              <Route path="/products/:id"/>
-              <Route path="/products"/>
+              <Route path="/products/:id" component={DetailProduct}/>
+              <Route path="/contact" component={Contact}/>
               <Route path="/cart"/>
-              
-
+              <Route path="/"/>
           </Switch>
         </main>
 

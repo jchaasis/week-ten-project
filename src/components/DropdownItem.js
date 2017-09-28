@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class DropdownItem extends Component {
 
@@ -13,7 +13,7 @@ class DropdownItem extends Component {
   render(){
 
     return(
-      <NavLink to={"/products/" + this.props.name }><li>{this.props.name}</li></NavLink>
+      <Link to={"/products/" + this.props.name }><li onClick={ () => this.handleClick()}>{this.props.name}</li></Link>
     )
   }
 }

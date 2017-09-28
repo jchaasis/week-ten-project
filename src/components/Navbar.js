@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 import Dropdown from './Dropdown';
 import DropdownItem from './DropdownItem';
@@ -23,17 +23,17 @@ class NavBar extends Component{
             <NavLink to={'/'}>Home</NavLink>
           </li>
           <li>
-            <NavLink to={'/products'}>
               <Dropdown name="Products">
+                <DropdownItem name="All"/>
                 <DropdownItem name="Accessories"/>
                  <DropdownItem name="Brass"/>
                 <DropdownItem name="Furniture"/>
               </Dropdown>
-            </NavLink>
+
           </li>
 
           <li>
-            <NavLink to={'/home '}>Contact</NavLink>
+            <Link to={'/contact'}>Contact</Link>
           </li>
           <li>
             <NavLink to={'/cart '}>Cart</NavLink>
