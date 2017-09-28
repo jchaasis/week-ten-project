@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+
+
 import './styles/App.css';
 
 import {Switch, Route} from 'react-router-dom';
@@ -20,21 +22,20 @@ class App extends Component {
 
         </div>
         <Navbar />
+
         <div>
-        <Dropdown name="Products">
-          <DropdownItem name="Product 1"/>
-          <DropdownItem name="Product 2"/>
-          <DropdownItem name="Product 3"/>
-        </Dropdown>
-        </div>
-        <div>
-          <p> {products[0].name} </p>
-          <img src={products[0].image} />
+
         </div>
         <main>
           <Switch>
+              <Route path="/"/>
+              <Route path="/products/accessories"/>
+              <Route path="/products/brass"/>
+              <Route path="/products/furniture"/>
               <Route path="/products/:id"/>
-
+              <Route path="/products"/>
+              <Route path="/cart"/>
+              
 
           </Switch>
         </main>

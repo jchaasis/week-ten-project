@@ -1,26 +1,40 @@
 //products: id, category, name, image, price
 
+import ashtray from '../images/ashtray.JPG';
+import books from '../images/books.JPG';
+import chairs from '../images/chairs.JPG';
+import brassDogs from '../images/brass-dogs.JPG';
+import brassMix from '../images/brass-mix.JPG';
+import candleSticks from '../images/candle-sticks.JPG';
+import chicken from '../images/chicken.JPG';
+import flamingoTray from '../images/flamingo-tray.JPG';
+import flowerPictures from '../images/flower-pictures.JPG';
+import glasses from '../images/glasses.JPG';
+import hangingBaskets from '../images/hanging-baskets.JPG';
+import ships from '../images/ships.jpg';
+import strawPitchers from '../images/straw-pitchers.JPG';
+import wickerTable from '../images/wicker-table.JPG';
+
 const products = [
       {
         "id": 1,
         "category": "furniture",
         "name": 'Chairs',
-        "image": "/Users/christianhaasis/documents/projects/week-ten-project/src/images/chairs.JPG",
-        "price": '$100'
-
+        "image": chairs,
+        "price": '$100',
       },
       {
         "id": 2,
         "category": "accessories",
         "name": 'Ashtray',
-        "image": "/Users/christianhaasis/documents/projects/week-ten-project/src/images/ashtray.JPG",
+        "image": ashtray,
         "price": '$20'
       },
       {
         "id": 3,
         "category": "accessories",
         "name": 'books',
-        "image": "/Users/christianhaasis/documents/projects/week-ten-project/src/images/books.JPG",
+        "image": books,
         "price": '$20'
       },
       {
@@ -83,7 +97,7 @@ const products = [
         "id": 12,
         "category": "accessories",
         "name": 'Ship paintings',
-        "image": "/Users/christianhaasis/documents/projects/week-ten-project/src/images/ships.JPG",
+        "image": ships,
         "price": '$50'
       },
       {

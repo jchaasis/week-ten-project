@@ -12,18 +12,20 @@ class Dropdown extends Component {
   }
 
   toggle(){
+    console.log(this.state.visible);
     this.setState({ visible: !this.state.visible})
   }
 
   render(){
 
-    let items = this.state.showing ? this.props.children : undefined;
+    let items = this.state.visible ? this.props.children : undefined;
 
     return(
 
       <div>
-        <p onClick={() => this.toggle()}>{this.props.name}</p>
+        <p onMouseEnter={() => this.toggle()}>{this.props.name}</p>
         <ul>
+
           {items}
         </ul>
       </div>
