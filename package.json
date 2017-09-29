@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "foundation-cli": "^2.2.3",
+    "foundation-sites": "^6.4.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",

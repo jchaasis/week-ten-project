@@ -6,13 +6,11 @@ class ProductSnip extends Component{
 
   render(){
 
-    let snipStyle = {
 
-    }
 
     return(
-      <div style={snipStyle}>
-      <Link to={"/products/"+this.props.id}>
+      <div className={'productSnip'}>
+      <Link to={"/products/"+this.props.id} className={'snipLink'}>
         <img src={this.props.image} alt='' width="200px"/>
         <h3> {this.props.name} </h3>
       </Link>

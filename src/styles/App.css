@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -8,8 +9,10 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-image: url( "../images/booth.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
   padding: 20px;
   color: white;
 }
@@ -22,3 +25,38 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.page{
+  margin-left: 5%;
+  width: 90%;
+  position: relative;
+  bottom: 50px;
+}
+
+
+/*Navbar*/
+
+ .navBar{
+  background-color:   RGB(152, 60, 171);
+}
+
+
+/*product snips*/
+
+.productSnip{
+}
+
+.productSnip h3{
+  width: 80%;
+  text-align: left;
+  padding: 3px;
+  color: black;
+  position: relative;
+  bottom: 60px;
+  background-color: rgba(152, 60, 171, 0.90);
+
+}
+ .snipLink{
+   text-decoration: none;
+
+ }

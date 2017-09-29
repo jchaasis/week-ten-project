@@ -9,34 +9,48 @@ class NavBar extends Component{
 
 
   render(){
+    let navBar={
+      backgroundColor: ' RGB(152, 60, 171)',
+      color: 'RGB(255, 239, 164)',
+    }
+
     let navLinks = {
+      color: 'RGB(255, 239, 164)',
       display: 'flex',
       justifyContent: 'space-around',
-      listStyle: "none"
+      listStyle: "none",
+      alignItems: 'center',
+
+    }
+
+    let navLink = {
+      color: 'RGB(255, 239, 164)',
+      textDecoration: 'none',
+
     }
 
     return(
 
-      <nav>
+      <nav style={navBar}>
         <ul style={navLinks}>
           <li>
-            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'/'} style={navLink}>Home</NavLink>
           </li>
           <li>
               <Dropdown name="Products">
-                <DropdownItem name="All"/>
-                <DropdownItem name="Accessories"/>
-                 <DropdownItem name="Brass"/>
-                <DropdownItem name="Furniture"/>
+                <DropdownItem name="All" style={navLink}/>
+                <DropdownItem name="Accessories" style={navLink}/>
+                 <DropdownItem name="Brass" style={navLink}/>
+                <DropdownItem name="Furniture" style={navLink}/>
               </Dropdown>
 
           </li>
 
           <li>
-            <Link to={'/contact'}>Contact</Link>
+            <Link to={'/contact'} style={navLink}>Contact</Link>
           </li>
           <li>
-            <NavLink to={'/cart '}>Cart</NavLink>
+            <NavLink to={'/cart'} style={navLink}>Cart</NavLink>
           </li>
         </ul>
       </nav>
