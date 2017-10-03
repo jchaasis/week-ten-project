@@ -46,11 +46,9 @@ class App extends Component {
           <main>
             <Switch>
 
-                <Route path="/products/category/All" component={Products}/>
-                <Route path="/products/category/:category" component={Category}/>
-
-                <Route path="/products/:id" render={(props)=> <DetailProduct match={props.match} addItem={item=> this.addItem(item)} />} /> //add the props.match because we are using a render instead of component={} which automatically sends them down
-
+                <Route path="/products/category/All" render={(props)=> <Products match={props.match} addItem={item=> this.addItem(item)} />}/> //add the props.match because we are using a render instead of component={} which automatically sends them down
+                <Route path="/products/category/:category" render={(props)=> <Category match={props.match} addItem={item=> this.addItem(item)} />}/>
+                <Route path="/products/:id" render={(props)=> <DetailProduct match={props.match} addItem={item=> this.addItem(item)} />} />
                 <Route path="/contact" component={Contact}/>
                 <Route path="/cart" render={()=> <Cart cart={this.state} />}/>
                 <Route path="/" component={Home}/>

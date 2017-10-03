@@ -4,6 +4,8 @@ import products from '../data/data';
 import ProductSnip from '../components/ProductSnip';
 class Products extends Component{
 
+
+
   render(){
     let containerStyle = {
       display: "flex",
@@ -12,7 +14,7 @@ class Products extends Component{
     }
 
     //map through the products data and create a snip for each.
-    const allProducts = products.map(item => <ProductSnip key={item.id} id={item.id} image={item.image} name={item.name} />)
+    const allProducts = products.map(item => <ProductSnip key={item.id} item={item} addItem={(item)=>this.props.addItem(item)}/>)
     return(
       <section style={containerStyle}>
         {allProducts}
