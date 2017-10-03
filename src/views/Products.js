@@ -10,7 +10,9 @@ class Products extends Component{
       justifyContent: "space-between",
       flexWrap: "wrap",
     }
-    const allProducts = products.map(item => <ProductSnip key={item.id} id={item.id} image={item.image} name={item.name}/>)
+
+    //map through the products data and create a snip for each.
+    const allProducts = products.map(item => <ProductSnip key={item.id} id={item.id} image={item.image} name={item.name} />)
     return(
       <section style={containerStyle}>
         {allProducts}

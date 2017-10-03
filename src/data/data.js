@@ -21,98 +21,98 @@ const products = [
         "category": "Furniture",
         "name": 'Chairs',
         "image": chairs,
-        "price": '$100',
+        "price": '100',
       },
       {
         "id": 1,
         "category": "Accessories",
         "name": 'Ashtray',
         "image": ashtray,
-        "price": '$20'
+        "price": '20'
       },
       {
         "id": 2,
         "category": "Accessories",
         "name": 'Books',
         "image": books,
-        "price": '$20'
+        "price": '20'
       },
       {
         "id": 3,
         "category": "Brass",
         "name": 'Brass Dogs',
         "image": brassDogs,
-        "price": '$40'
+        "price": '40'
       },
       {
         "id": 4,
         "category": "Brass",
         "name": "Mixed Brass",
         "image": brassMix,
-        "price": '$90'
+        "price": '90'
       },
       {
         "id": 5,
         "category": "Accessories",
         "name": 'Candle Sticks',
         "image": candleSticks,
-        "price": '$15'
+        "price": '15'
       },
       {
         "id": 6,
         "category": "Accessories",
         "name": 'Chicken plate',
         "image": chicken,
-        "price": '$20'
+        "price": '20'
       },
       {
         "id": 7,
         "category": "Accessories",
         "name": 'Flamingo Tray',
         "image": flamingoTray,
-        "price": '$30'
+        "price": '30'
       },
       {
         "id": 8,
         "category": "Accessories",
         "name": 'Flowers',
         "image": flowerPictures,
-        "price": '$40'
+        "price": '40'
       },
       {
         "id": 9,
         "category": "Accessories",
         "name": 'Assorted Glasses',
         "image": glasses,
-        "price": '$30'
+        "price": '30'
       },
       {
         "id": 10,
         "category": "Accessories",
         "name": 'Basket Variety',
         "image": hangingBaskets,
-        "price": '$20 each'
+        "price": '20 each'
       },
       {
         "id": 11,
         "category": "Accessories",
         "name": 'Ship paintings',
         "image": ships,
-        "price": '$50'
+        "price": '50'
       },
       {
         "id": 12,
         "category": "Accessories",
         "name": 'Straw pitchers',
         "image": strawPitchers,
-        "price": '$15'
+        "price": '15'
       },
       {
         "id": 13,
         "category": "Furniture",
         "name": 'Wicker table',
         "image": wickerTable,
-        "price": '$60'
+        "price": '60'
       },
 
 

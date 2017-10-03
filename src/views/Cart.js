@@ -3,17 +3,6 @@ import React, { Component } from 'react';
 import products from '../data/data';
 
 class Cart extends Component{
-  constructor(props){
-    super(props);
-
-    this.state = {
-      cartTotal: 0,
-    }
-  }
-
-  updateTotal(){
-
-  }
 
   render(){
 
@@ -21,19 +10,21 @@ class Cart extends Component{
       listStyle: "none",
     }
 
-    let items = this.props.cart.map(item =>
+    //map through the cart and produce a li for each item present
+    let items = this.props.cart.cart.map(item =>
+
       <li key={item.id}>
         <img src={item.image} width="100px"/>
-        <h3> {item.name}, {item.price}</h3>
-      </li>
-      )
+        <h3> {item.name}, ${item.price}</h3>
+      </li>)
 
     return(
       <section>
       <ul style={cartStyle}>
-        {items}
 
-        <li> Total: ${this.state.cartTotal} </li>
+        {items}
+        <li> Total: ${this.props.cart.totalCost} </li>
+
       </ul>
       </section>
     )

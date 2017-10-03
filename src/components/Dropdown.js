@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import DropdownItem from './DropdownItem'
-
 class Dropdown extends Component {
   constructor(props){
     super(props);
@@ -16,7 +14,7 @@ class Dropdown extends Component {
   }
 
   render(){
-
+    //if visible, display the dropdown items.
     let items = this.state.visible ? this.props.children : undefined;
 
     return(

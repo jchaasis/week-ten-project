@@ -5,9 +5,7 @@ import products from '../data/data';
 class DetailProduct extends Component{
 
   handleAdd(productId){
-    // console.log(parseInt(productId))
-
-
+    //add an item to the cart in app.js
     this.props.addItem(productId);
 
   }
@@ -19,7 +17,7 @@ class DetailProduct extends Component{
       <section>
         <h2> {products[rp].name} </h2>
         <img src={products[rp].image} alt={products[rp].name} width="500px"/>
-        <p> {products[rp].price} </p>
+        <p> ${products[rp].price} </p>
         <button onClick={()=> this.handleAdd(products[rp])}> Add to Cart </button>
       </section>
     )
