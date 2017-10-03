@@ -12,7 +12,6 @@ class Dropdown extends Component {
   }
 
   toggle(){
-    console.log(this.state.visible);
     this.setState({ visible: !this.state.visible})
   }
 
@@ -24,8 +23,7 @@ class Dropdown extends Component {
 
       <div>
         <p onMouseEnter={() => this.toggle()}>{this.props.name}</p>
-        <ul>
-
+        <ul className={'navDropDown'}>
           {items}
         </ul>
       </div>

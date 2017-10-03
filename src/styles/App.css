@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App-logo {
@@ -25,14 +26,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+body{
+  background-color: rgb(255, 239, 164);
+}
 
 .page{
   margin-left: 5%;
   width: 90%;
   position: relative;
   bottom: 50px;
+  background-color: white;
 }
-
 
 /*Navbar*/
 
@@ -40,8 +44,18 @@
   background-color:   RGB(152, 60, 171);
 }
 
+.navDropDown{
+  position: absolute;
+  background-color: RGB(152, 60, 171);
+  color: rgb(255, 239, 164);
+  list-style: none;
+  text-align: left;
+
+}
+
 
 /*product snips*/
+
 
 .productSnip{
 }
